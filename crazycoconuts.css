@@ -1,0 +1,102 @@
+.header{
+  width:100%;
+  height:auto;
+  word-spacing:15px;
+  font-size:22px;
+  opacity:0.8;
+  position:sticky;
+}
+.navbar-links-div{
+  display:flex;
+  justify-content:space-around;
+}
+a{
+  text-decoration:none;
+  color:black;
+  margin-left:2px;
+  margin-right:2px;
+}
+a:hover{
+  transition-duration:1s;
+  border:2px solid #256967;
+  border-radius:90px;
+  margin-left:4px;
+  margin-right:4px;
+  font-size:21px;
+}
+button{
+  height:auto;
+  width:20%;
+  padding:7.5px 20px 7.5px 20px;
+  font-size:18px;
+  border:none;
+  background-color:#3fb0ac;
+  margin:5px 5px 0px 0px;
+}
+button:hover{
+  box-shadow:1px 1px grey;
+  background-color:#3fb0ac;
+}
+li{
+  list-style-type:none;
+}
+li:hover{
+color:#256967;
+transition-duration:0.5s;
+font-size:18px;
+}
+.active{
+  border-bottom:2px solid #3fb0ac;
+  font-size:22px;
+}
+form{
+  text-align:center;
+}
+select{
+  text-align: center;
+  text-align-last: center;
+}
+input{
+  border:none;
+  font-size:18px;
+  width:80%;
+  text-align: center;
+  margin-top:5px;
+  padding:10px 5px 10px 5px;
+}
+textarea{
+  border:none;
+  width:80%;
+  font-size:18px;
+  text-align: center;
+}
+.footer{
+  display:flex;
+  justify-content:space-between;
+}
+#latest-team-news{
+  text-align:center;
+  height:auto;
+  width:100%;
+}
+.footer-links-location{
+  display:inline-block;
+  margin-left:20px;
+  margin-right:20px;
+}
+.footer-links-div{
+  text-align:center;
+  height:auto;
+  width:100%;
+}
+#join-form-dropdown{
+  border:none;
+  width:20%;
+  text-align:center;
+  font-size:18px;
+  margin:5px, 0px, 0px, 0px;
+}
+#contact-form-text{
+  text-align:center;
+  font-size:17px;
+}
