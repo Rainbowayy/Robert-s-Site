@@ -103,10 +103,19 @@ textarea{
 .gallery-loayout{
 }
 .grid-container{
-  display:grid;
-  grid-template-columns:80px 80px 80px;
-  grid-template-rows:80px 80px 80px;
-  grid-column-gap:15px;
-  width:100%;
-  height:auto;
+display:grid;
+align-items:center;
+grid-template-columns:repeat(8, 160px);
+grid-template-rows:160px 160px 160px 160px;
+grid-column-gap:15px;
+width:100%;
+height:auto;
+}
+@media screen and (max-width:992px) {
+  .grid-container{
+    display:grid;
+    align-items: center;
+    grid-template-columns:repeat(3, 160px);
+    grid-template-rows: 160px 160px 160px 160px 160px;
+  }
 }
