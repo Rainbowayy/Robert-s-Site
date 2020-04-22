@@ -22,6 +22,8 @@ a:hover{
   border-radius:90px;
   margin-left:4px;
   margin-right:4px;
+  padding-left:4px;
+  padding-right:4px;
   font-size:21px;
 }
 button{
@@ -99,6 +101,7 @@ textarea{
 #contact-form-text{
   text-align:center;
   font-size:17px;
+  word-wrap:break-word;
 }
 .grid-container{
 display:grid;
@@ -128,10 +131,10 @@ height:auto;
 }
 #grid-selector{
   padding:12px 16px 12px 16px;
-  background-color:#3fb0ac;
+  border:solid 1px #3fb0ac;
 }
 #grid-selector:hover{
-  opacity:0.7;
+  background-color:#3fb0ac;
   transition-duration:0.25s;
 }
 /**Added all media queries for variouswith different sixes to improve overall accessibility to the site. This is a constant work in progress due to new devices being released often.**/
@@ -152,225 +155,43 @@ height:auto;
  }
 
 /**General size for tablet/iPad screens**/
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+@media (min-width: 768px) and (max-width: 1024px){
   .grid-container{
-    grid-template-columns:repeat(4, 160px);
-    grid-template-rows:repeat(5, 160px);
+    grid-template-columns:repeat(2, 160px);
+    grid-template-rows:repeat(7, 160px);
   }
 }
-/**Low Resolution Tablets, Mobiles (Landscape)**/
+/**Low Resolution Tablets, Mobiles**/
+@media (min-device-width:320px) and (max-device-width:767px){
+  .grid-container{
+    grid-template-columns:repeat(2, 160px);
+    grid-template-rows:repeat(7, 160px);
+  }
+  .header{
+     font-size:14px;
+     word-spacing:10px;
+   }
+   .active{
+     font-size:15px;
+   }
+   #contact-form-text{
+     word-wrap:break-word;
+   }
+}
+/**general viewport for when the browser window is minimized/made smaller**/
 @media (min-width:320px) and (max-width:767px){
   .grid-container{
     grid-template-columns:repeat(2, 160px);
     grid-template-rows:repeat(7, 160px);
   }
+  .header{
+     font-size:14px;
+     word-spacing:10px;
+   }
+   .active{
+     font-size:15px;
+   }
+   #contact-form-text{
+     word-wrap:break-word;
+   }
 }
-
-/**Most of the Smartphones Mobiles (Portrait)**/
-@media (min-width:320px) and (max-width:480px){
-  .grid-container{
-    grid-template-columns:repeat(2, 160px);
-    grid-template-rows:repeat(7, 160px);
-  }
-}
-
-/**------iPhone 4 and 4s-------**/
-@media only screen and (max-device-width:480px) and (min-device-width:320px) {
-  .grid-container{
-    grid-template-columns:repeat(2, 160px);
-    grid-template-rows: repeat(7, 160px);
-    margin:0px 0px 0px 40px;
-  }
-  .header{
-    font-size:16px;
-    word-spacing:10px;
-  }
-  .active{
-    font-size:15px;
-  }
- }
- /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
- @media only screen and (max-device-width:568px) and (min-device-width:320px) {
-   .grid-container{
-     grid-template-columns:repeat(2, 160px);
-     grid-template-rows: repeat(7, 160px);
-     margin:0px 0px 30px 0px;
-   }
-   .header{
-     font-size:16px;
-     word-spacing:10px;
-   }
-   .active{
-     font-size:15px;
-   }
-  }
-
-/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
-@media only screen and (max-device-width:667px) and (min-device-width:375px) {
-  .grid-container{
-    grid-template-columns:repeat(2, 160px);
-    grid-template-rows: repeat(7, 160px);
-    margin:0px 0px 30px 40px;
-  }
-  .header{
-    font-size:16px;
-    word-spacing:10px;
-  }
-  .active{
-    font-size:15px;
-  }
- }
-
- /* ----------- iPhone 6+, 7+ and 8+ ----------- */
- @media only screen and (max-device-width:736px) and (min-device-width:414px) {
-   .grid-container{
-     grid-template-columns:repeat(2, 160px);
-     grid-template-rows: repeat(7, 160px);
-     margin:0px 0px 30px 40px;
-   }
-   .header{
-     font-size:16px;
-     word-spacing:10px;
-   }
-   .active{
-     font-size:15px;
-   }
-  }
-
-/* ----------- iPhone X ----------- */
-@media only screen and (max-device-width:812px) and (min-device-width:375px) {
-  .grid-container{
-    grid-template-columns:repeat(2, 160px);
-    grid-template-rows: repeat(7, 160px);
-    margin:0px 0px 30px 40px;
-  }
-  .header{
-    font-size:16px;
-    word-spacing:10px;
-  }
-  .active{
-    font-size:15px;
-  }
- }
- /* ----------- iPad 1, 2, Mini and Air ----------- */
- @media only screen and (max-device-width:1024px) and (min-device-width:768px) {
-   .grid-container{
-     grid-template-columns:repeat(2, 160px);
-     grid-template-rows: repeat(7, 160px);
-     margin:0px 0px 30px 40px;
-   }
-   .header{
-     font-size:16px;
-     word-spacing:10px;
-   }
-   .active{
-     font-size:15px;
-   }
-  }
-
-  /* ----------- iPad 3, 4 and Pro 9.7" ----------- */
-  @media only screen and (max-device-width:1024px) and (min-device-width:768px) {
-    .grid-container{
-      grid-template-columns:repeat(2, 160px);
-      grid-template-rows: repeat(8, 160px);
-      margin:0px 0px 30px 40px;
-    }
-    .header{
-      font-size:16px;
-      word-spacing:10px;
-    }
-    .active{
-      font-size:15px;
-    }
-   }
-
-/* ----------- Galaxy S3 ----------- */
- @media screen and (device-width:360px) and (device-height:640px) {
-   .grid-container{
-     grid-template-columns:repeat(2, 160px);
-     grid-template-rows: repeat(7, 160px);
-     margin:0px 0px 30px 40px;
-   }
-  }
-
-/* ----------- Galaxy S4, S5 and Note 3 ----------- */
-  @media screen and (device-width:320px) and (device-height:640px) {
-    .grid-container{
-      grid-template-columns:repeat(2, 160px);
-      grid-template-rows: repeat(7, 160px);
-      margin:0px 0px 30px 40px;
-    }
-   }
-
-/* ----------- Galaxy S6 ----------- */
-   @media screen and (device-width:360px) and (device-height:640px) {
-     .grid-container{
-       grid-template-columns:repeat(2, 160px);
-       grid-template-rows: repeat(7, 160px);
-       margin:0px 0px 30px 40px;
-     }
-    }
-
-    /* ----------- Galaxy Tab 2 ----------- */
-    @media screen and (max-device-width: 1280px) and (min-device-width: 800px) {
-      .grid-container{
-        grid-template-columns:repeat(4, 160px);
-        grid-template-rows: repeat(4, 160px);
-        margin:0px 0px 30px 40px;
-      }
-     }
-
-/* ----------- Google Pixel ----------- */
-@media screen and (device-width:360px) and (device-height:640px) {
-  .grid-container{
-    grid-template-columns:repeat(2, 160px);
-    grid-template-rows: repeat(7, 160px);
-    margin:0px 0px 30px 40px;
-  }
- }
-
- /* ----------- Kindle Fire HD 7"+ Kindle Fire HD 8.9" ----------- */
- @media screen and (max-device-width: 1280px) and (min-device-width: 800px) {
-   .grid-container{
-     grid-template-columns:repeat(4, 160px);
-     grid-template-rows: repeat(4, 160px);
-     margin:0px 0px 30px 40px;
-   }
-  }
-
-
- /* ----------- Google Pixel XL ----------- */
- @media screen and (device-width:360px) and (device-height:640px) {
-   .grid-container{
-     grid-template-columns:repeat(2, 160px);
-     grid-template-rows: repeat(7, 160px);
-     margin:0px 0px 30px 40px;
-   }
-  }
-
-   /* ----------- Nexus 9 ----------- */
-   @media screen and (device-width:1536px) and (device-height:2048px) {
-     .grid-container{
-       grid-template-columns:repeat(2, 160px);
-       grid-template-rows: repeat(7, 160px);
-       margin:0px 0px 30px 40px;
-     }
-    }
-
-  /* ----------- HTC One ----------- */
-  @media screen and (device-width:360px) and (device-height:640px) {
-    .grid-container{
-      grid-template-columns:repeat(2, 160px);
-      grid-template-rows: repeat(7, 160px);
-      margin:0px 0px 30px 40px;
-    }
-   }
-
-   /* ----------- Windows Phone ----------- */
-   @media screen and (device-width:480px) and (device-height:800px) {
-     .grid-container{
-       grid-template-columns:repeat(2, 160px);
-       grid-template-rows: repeat(7, 160px);
-       margin:0px 0px 30px 40px;
-     }
-    }
