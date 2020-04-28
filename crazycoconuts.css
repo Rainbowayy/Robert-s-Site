@@ -110,16 +110,19 @@ text-align: center;
 grid-template-columns:repeat(8, 160px);
 grid-template-rows:repeat(4, 160px);
 grid-column-gap:15px;
+grid-row-gap:15px;
 width:100%;
 height:auto;
+margin-top:20px;
 }
 .gallery-layout{
   display:flex;
   justify-content: center;
 }
 .grid-imgs{
-  max-width:160px;
-  max-height:160px;
+  width:160px;
+  height:160px;
+  background-size:contain;
 }
 .grid-imgs:hover{
   opacity:0.7;
@@ -134,11 +137,17 @@ height:auto;
   border:solid 1px #3fb0ac;
 }
 #grid-selector:hover{
-  background-color:#3fb0ac;
-  transition-duration:0.25s;
+  background: linear-gradient(to bottom right,  white 50%, #3fb0ac 50%);
+  background-size: 200% 150%;
+  background-position: right bottom;
+  transition: all 0.5s ease-out;
+  border-radius:50%;
+}
+.about-body{
+  text-align:center;
+  word-wrap:break-word;
 }
 /**Added all media queries for variouswith different sixes to improve overall accessibility to the site. This is a constant work in progress due to new devices being released often.**/
-
 /**1281px to higher resolution desktops**/
  @media (min-width: 1281px) {
    .grid-container{
@@ -166,7 +175,7 @@ height:auto;
   .grid-container{
     grid-template-columns:repeat(2, 160px);
     grid-template-rows:repeat(7, 160px);
-    margin:0px, 0px, 0px, 40px;
+    margin:20px 0px 0px 40px;
   }
   .header{
      font-size:33px;
@@ -198,7 +207,7 @@ height:auto;
   .grid-container{
     grid-template-columns:repeat(2, 160px);
     grid-template-rows:repeat(7, 160px);
-    margin:0px, 0px, 0px, 40px;
+    margin:20px 0px 0px 40px;
   }
   .header{
      font-size:14px;
