@@ -158,11 +158,14 @@ margin-top:20px;
   flex-direction:row;
 }
 .team-member-info-image-container{
-padding:0px 0px 100px 0px;
+padding:0px 0px 50px 0px;
 box-shadow:0 0 10px;
 }
 .image-margin-fix{
-  margin-right:10px;
+  margin-right:20px;
+}
+.bold-text-for-member-names{
+  font-weight:bold;
 }
 /**Added all media queries for variouswith different sixes to improve overall accessibility to the site. This is a constant work in progress due to new devices being released often.**/
 /**1281px to higher resolution desktops**/
@@ -178,6 +181,12 @@ box-shadow:0 0 10px;
      grid-template-columns:repeat(4, 160px);
      grid-template-rows:repeat(4, 160px);
    }
+   .team-member-container{
+     flex-direction:column;
+   }
+   .image-margin-fix{
+     margin-top:30px;
+ }
  }
 
 /**General size for tablet/iPad screens**/
@@ -186,6 +195,12 @@ box-shadow:0 0 10px;
     grid-template-columns:repeat(2, 160px);
     grid-template-rows:repeat(7, 160px);
   }
+  .team-member-container{
+    flex-direction:column;
+  }
+  .image-margin-fix{
+    margin-top:30px;
+}
 }
 /**Low Resolution Tablets, Mobiles**/
 @media (min-device-width:320px) and (max-device-width:767px){
@@ -217,6 +232,12 @@ box-shadow:0 0 10px;
      margin:5px 0px 0px 0px;
      max-width:auto;
    }
+   .team-member-container{
+     flex-direction:column;
+   }
+   .image-margin-fix{
+     margin-top:30px;
+ }
  }
 
 /**general viewport for when the browser window is minimized/made smaller**/
@@ -250,4 +271,10 @@ box-shadow:0 0 10px;
    footer{
      font-size:28px;
    }
+   .team-member-container{
+     flex-direction:column;
+   }
+   .image-margin-fix{
+     margin-top:30px;
+ }
 }
