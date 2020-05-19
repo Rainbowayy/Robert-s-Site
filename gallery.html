@@ -4,6 +4,20 @@
 <head>
 <title>Crazy Coconuts</title>
 <link rel="stylesheet" href="crazycoconuts.css" type="text/css"></link>
+<script>
+function gallery2(){
+  window.open("gallery2.html");
+}
+function gallery3(){
+  window.open("gallery3.html");
+}
+function gallery(){
+  window.open("gallery.html");
+}
+function gallery4(){
+  window.open("gallery4.html")
+}
+</script>
 </head>
 
 <header class="header">
@@ -13,7 +27,7 @@
     <a href="about.html" target="_blank">About</a>
     <a href="join.html" target="_blank">Join</a>
     <a href="contact.html" target="_blank">Contact</a>
-    <a class="active" href="gallery.html" target="_blank">Gallery</a>
+    <a id="active" href="gallery.html" target="_blank">Gallery</a>
   </div>
 </header>
 <body class="gallery-layout">
@@ -34,12 +48,18 @@
 <img class="grid-imgs" src="https://crazycoconuts.com/gallery/Team/images/teamphoto11.jpg" alt="volleyball">
 <img class="grid-imgs" src="https://crazycoconuts.com/gallery/Team/images/teamphoto16.jpg" alt="volleyball">
 <img class="grid-imgs" src="https://crazycoconuts.com/gallery/Team/images/teamphoto19.jpg" alt="volleyball">
+<img class="grid-imgs" src="https://crazycoconuts.com/gallery/indoor/cmss02/images/Group.jpg" alt="volleyball">
+<img class="grid-imgs" src="https://crazycoconuts.com/gallery/indoor/cmss02/images/CC.jpg" alt="volleyball">
+<img class="grid-imgs" src="https://crazycoconuts.com/gallery/indoor/cmss02/images/Block01.jpg" alt="volleyball">
+<img class="grid-imgs" src="https://crazycoconuts.com/gallery/indoor/cmss02/images/Defence.jpg" alt="volleyball">
+<img class="grid-imgs" src="https://crazycoconuts.com/gallery/indoor/cmss02/images/ShortDig.jpg" alt="volleyball">
+
   </div>
   <section class="grid-page-numbers">
-    <p id="grid-selector">1</p>
-    <p id="grid-selector">2</p>
-    <p id="grid-selector">3</p>
-    <p id="grid-selector">4</p>
+    <p id="grid-selector" onclick="gallery()">1</p>
+    <p id="grid-selector" onclick="gallery2()">2</p>
+    <p id="grid-selector" onclick="gallery3()">3</p>
+    <p id="grid-selector" onclick="gallery4()">4</p>
   </section>
 </body>
 <footer class="footer">
