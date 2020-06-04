@@ -31,18 +31,21 @@ button{
   width:20%;
   padding:7.5px 20px 7.5px 20px;
   font-size:18px;
-  border:none;
-  background-color:#3fb0ac;
+  border:1px solid #3fb0ac;
   margin:5px 5px 0px 0px;
 }
 button:hover{
   box-shadow:1px 1px grey;
-  background-color:#3fb0ac;
+  background:linear-gradient(to bottom, white 50%, #3fb0ac 50%);
+  background-size:100% 220%;
+  color:black;
+  background-position:bottom;
+  transition: all 0.5s ease-in;
 }
-li{
+.general-list-hover{
   list-style-type:none;
 }
-li:hover{
+.general-list-hover:hover{
 color:#256967;
 transition-duration:0.5s;
 font-size:18px;
@@ -156,15 +159,51 @@ margin-top:20px;
   justify-content: center;
   flex-direction:row;
 }
-.team-member-info-image-container{
+.team-member-info-image-container:hover{
 padding:0px 0px 50px 0px;
 box-shadow:0 0 10px;
+transition-duration:0.5s;
 }
 .image-margin-fix{
   margin-right:20px;
 }
 .bold-text-for-member-names{
   font-weight:bold;
+}
+#calendar-section{
+  height:auto;
+  width:35%;
+}
+#calendar-month-legend-display{
+  background-color:#3fb0ac;
+  text-align:center;
+}
+#calendar-day-display{
+}
+#day-week-alignment{
+  display:flex;
+  justify-content: center;
+  align-items:center;
+}
+#calendar-week{
+  text-align:center;
+  align-items:center;
+  font-weight:bold;
+  display:grid;
+  grid-template-columns:repeat(7, 80px);
+  grid-template-rows:repeat(6, 80px);
+  grid-column-gap:10px;
+  grid-row-gap:30px;
+  background-color:#eee;
+  margin-top:-20px;
+  padding:0px 20px 0px 20px;
+}
+#calendar-center{
+display:flex;
+justify-content:center;
+}
+.calendar-week-days{
+  list-style-type:none;
 }
 /**Added all media queries for variouswith different sixes to improve overall accessibility to the site. This is a constant work in progress due to new devices being released often.**/
 /**1281px to higher resolution desktops**/
