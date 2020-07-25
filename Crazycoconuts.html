@@ -4,43 +4,8 @@
 <head>
 <title>Crazy Coconuts</title>
 <link rel="stylesheet" href="crazycoconuts.css" type="text/css"></link>
-<script>
-function jump() {
-  var d = new Date();
-  var d = new Date();
-  var d = new Date();
-  var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-  document.getElementById("month").innerHTML = months [d.getMonth()];
-  document.getElementById("day").innerHTML = d.getDate();
-  document.getElementById("year").innerHTML = d.getFullYear();
-}
-function vball(){
-  var now  = new Date();
-  	var weekday = new Array(7);
-  weekday[0]=  "Sunday";
-  weekday[1] = "Monday";
-  weekday[2] = "Tuesday";
-  weekday[3] = "Wednesday";
-  weekday[4] = "Thursday";
-  weekday[5] = "Friday";
-  weekday[6] = "Saturday";
-  var day = weekday[now.getDay()];
-
-  	document.writeln("<p>Today is " + day + "</p>");
-
-  	if (day == "Monday") {
-        document.writeln("<h2>There is volleyball today.</h2>");
-      }
-  	else if(day = "Sunday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"){
-        document.writeln("<h2>There's no volleyball today</h2>");
-      }
-      setTimeout(function() {
-      location.reload();
-      }, 10000);
-}
-</script>
+<script src="crazycoconuts.js"></script>
 </head>
-
 <header class="header">
   <div class="navbar-links-div">
   <navbar id="nav-bar">
@@ -52,29 +17,25 @@ function vball(){
   </div>
 </header>
 <body>
-  <section id="latest-team-news">
-    <h2>Monday Night Volleyball</h2>
-    <article>Our weekly Monday Night Volleyball practice is scheduled on 2020-03-16 at 8 PM EST.
-    If you cannot make it, feel free to leave a comment under the weekly calendar to let everyone know.</article>
+  <section id="volleyball-today-btns">
     <div>
-    <button onclick="jump()">Date</button>
-    <button onclick="vball()">Volleyball today</button>
+      <button onclick="jump()">Date</button>
+      <button onclick="vball()">Volleyball today</button>
     </div>
     <div>
-    <p id="month"></p>
-    <p id="day"></p>
-    <p id="year"></p>
-    <p id="week"></p>
+      <p id="month"></p>
+      <p id="day"></p>
+      <p id="year"></p>
+      <p id="week"></p>
   </div>
   <div>
     <button onclick="location.reload()">Clear</button>
   </div>
 
     <h2>Crazy Coconuts Win Tournament</h2>
-    <article> Crazy Coconuts finish in 1st place Competitive Pool A 2007</article>
-    <button onclick="window.location.href='gallery.html'">View The Photos</button>
+      <article> Crazy Coconuts finish in 1st place Competitive Pool A 2007</article>
+      <button onclick="window.location.href='gallery.html'">View The Photos</button>
   </section>
-  <div></div><!--Building a slideshow Under the constant notification of Monday Night Volleyball.-->
 </body>
 <footer class="footer">
   <div class="footer-links-div">
