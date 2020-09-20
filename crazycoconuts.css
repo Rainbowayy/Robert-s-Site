@@ -2,7 +2,7 @@
   width:100%;
   height:auto;
   word-spacing:15px;
-  font-size:22px;
+  font-size:25px;
   opacity:0.8;
   position:sticky;
 }
@@ -24,7 +24,7 @@ a:hover{
   margin-right:4px;
   padding-left:4px;
   padding-right:4px;
-  font-size:21px;
+  font-size:25px;
 }
 button{
   height:auto;
@@ -48,11 +48,10 @@ button:hover{
 .general-list-hover:hover{
 color:#256967;
 transition-duration:0.5s;
-font-size:18px;
+font-size:22px;
 }
 #active{
   border-bottom:2px solid #3fb0ac;
-  font-size:22px;
 }
 form{
   text-align:center;
@@ -78,6 +77,7 @@ textarea{
 .footer{
   display:flex;
   justify-content:space-between;
+  font-size:18px;
 }
 #volleyball-today-btns{
   text-align:center;
