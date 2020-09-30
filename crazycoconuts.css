@@ -60,7 +60,7 @@ select{
   text-align: center;
   text-align-last: center;
 }
-input{
+.input-contact-join-forms{
   border:none;
   font-size:18px;
   width:80%;
@@ -177,6 +177,9 @@ padding:0px 0px 50px 0px;
 box-shadow:0 0 10px;
 transition-duration:0.5s;
 }
+.team-member-info-image-container{
+  transition-duration:0.5s;
+}
 .image-margin-fix{
   margin-right:20px;
 }
@@ -186,6 +189,7 @@ transition-duration:0.5s;
 .calendar-week-days{
   list-style-type:none;
 }
+
 /**Added all media queries for variouswith different sixes to improve overall accessibility to the site. This is a constant work in progress due to new devices being released often.**/
 /**1281px to higher resolution desktops**/
  @media (min-width: 1281px) {
