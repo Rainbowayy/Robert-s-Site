@@ -1,7 +1,7 @@
 .header{
   width:100%;
   height:auto;
-  word-spacing:15px;
+  word-spacing:150px;
   font-size:25px;
   opacity:0.8;
   position:sticky;
@@ -15,9 +15,10 @@ a{
   color:black;
   margin-left:2px;
   margin-right:2px;
+  transition-duration: 0.5s;
 }
 a:hover{
-  transition-duration:1s;
+  transition-duration:0.5s;
   border:2px solid #3fb0ac;
   border-radius:90px;
   margin-left:4px;
@@ -138,6 +139,7 @@ width:100%;
 height:100%;
 border-radius:10px;
 object-fit:cover;
+transition-duration:0.25s;
 }
 .grid-imgs:hover{
   box-shadow:grey 0 0 20px;
@@ -189,7 +191,10 @@ transition-duration:0.5s;
 .calendar-week-days{
   list-style-type:none;
 }
-
+select{
+  font-size:20px;
+  border:none;
+}
 /**Added all media queries for variouswith different sixes to improve overall accessibility to the site. This is a constant work in progress due to new devices being released often.**/
 /**1281px to higher resolution desktops**/
  @media (min-width: 1281px) {
